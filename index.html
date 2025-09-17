@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo LCOSTA - Construções e Reformas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="assets/images/logo.png" alt="Grupo LCOSTA Logo" class="logo" id="logo">
+                <h1 class="company-name" id="company-name">Grupo LCOSTA</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Carrossel de Imagens -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="assets/images/obra1_1.jpg" alt="Obra 1 - Fundação">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_2.jpg" alt="Obra 2 - Concretagem">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_3.jpg" alt="Obra 3 - Estrutura">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_4.jpg" alt="Obra 4 - Armação">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_5.jpg" alt="Obra 5 - Laje">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_6.jpg" alt="Obra 6 - Infraestrutura">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_7.jpg" alt="Obra 7 - Drenagem">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_8.jpg" alt="Obra 8 - Acabamento">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/obra1_9.jpg" alt="Obra 9 - Muros">
+                </div>
+                
+                <!-- Controles do Carrossel -->
+                <button class="carousel-btn carousel-prev" id="prevBtn">&#10094;</button>
+                <button class="carousel-btn carousel-next" id="nextBtn">&#10095;</button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                    <span class="indicator" data-slide="6"></span>
+                    <span class="indicator" data-slide="7"></span>
+                    <span class="indicator" data-slide="8"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section class="section sobre-nos" id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre Nós</h2>
+                <div class="section-content">
+                    <p>O Grupo LCOSTA é uma empresa especializada em construção civil, com vasta experiência no mercado de edificações residenciais e comerciais. Nossa equipe altamente qualificada trabalha com dedicação e profissionalismo para entregar projetos de excelência.</p>
+                    
+                    <p>Com anos de atuação no setor, desenvolvemos expertise em todas as etapas da construção, desde o planejamento inicial até a entrega final da obra. Nosso compromisso é oferecer soluções construtivas inovadoras, sempre priorizando a qualidade, segurança e satisfação dos nossos clientes.</p>
+                    
+                    <p>Trabalhamos com tecnologias modernas e materiais de primeira qualidade, garantindo durabilidade e acabamento impecável em todos os nossos projetos. Nossa missão é transformar sonhos em realidade através de construções sólidas e bem executadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="section servicos" id="servicos">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Construção de Edifícios</h3>
+                        <p>Projetos completos de edifícios residenciais e comerciais, desde a fundação até o acabamento final.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Construção de Residências</h3>
+                        <p>Casas personalizadas com design moderno e funcional, atendendo às necessidades específicas de cada família.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Reformas</h3>
+                        <p>Renovação e modernização de imóveis existentes, com foco na otimização de espaços e valorização do patrimônio.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Manutenção</h3>
+                        <p>Serviços de manutenção preventiva e corretiva para garantir a longevidade e bom funcionamento das edificações.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Gerenciamento de Obras</h3>
+                        <p>Coordenação completa de projetos, incluindo planejamento, execução e controle de qualidade em todas as etapas.</p>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <button class="cta-button" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                        Solicite um Orçamento
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="section contato" id="contato">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-item">
+                            <strong>E-mail:</strong>
+                            <a href="mailto:lcostagrupo@gmail.com">lcostagrupo@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Telefone:</strong>
+                            <a href="tel:+5515996388278">(15) 99638-8278</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Horário de Atendimento:</strong>
+                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Grupo LCOSTA Construções. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
